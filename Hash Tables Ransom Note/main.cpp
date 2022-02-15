@@ -21,11 +21,11 @@ void checkMagazine(vector<string> magazine, vector<string> note) {
         ++mag_map[x];
     
     for(auto const & x : note){
-        if(mag_map[x]){
-            --mag_map[x];
+		if(mag_map[x]){
+			--mag_map[x];
 		}else{
-            cout << "No\n";
-            return;
+			cout << "No\n";
+			return;
         }
     }
     
